@@ -2,7 +2,7 @@
 
 %p
   %b Url:
-  = @video.url
+  = link_to "#{@video.url}", @video.url
 
 = link_to 'Edit', edit_video_path(@video)
 \|
