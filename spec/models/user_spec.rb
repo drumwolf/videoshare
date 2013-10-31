@@ -15,6 +15,11 @@ describe User do
     User.create!(@attr)
   end
 
+  it 'has video association' do
+    user = User.create!(@attr)
+    user.should respond_to(:videos)
+  end
+
   it "should require an email address" do
     no_email_user = User.new(@attr.merge(:email => ""))
     no_email_user.should_not be_valid
