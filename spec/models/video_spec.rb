@@ -13,4 +13,11 @@ describe Video do
     video = Video.create!(@attr)
     video.should respond_to(:users)
   end
+
+  describe '#youtube_id' do
+    it 'returns youtube_id' do
+      video = Video.create(:url => "http://youtu.be/fZ_JOBCLF-I")
+      video.youtube_id.should == "fZ_JOBCLF-I"
+    end
+  end
 end
