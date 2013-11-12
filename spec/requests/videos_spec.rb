@@ -9,6 +9,7 @@ describe "Videos" do
 
     it 'renders correct video dashboard' do
       visit videos_path
+      page.should have_content 'Your Current Videos'
     end
   end
 end
