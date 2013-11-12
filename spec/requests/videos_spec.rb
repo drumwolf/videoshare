@@ -10,6 +10,7 @@ describe "Videos" do
     it 'renders correct video dashboard' do
       visit videos_path
       page.should have_content 'Your Current YouTube Videos'
+      page.should have_content 'New YouTube Video'
     end
   end
 end
