@@ -2,10 +2,14 @@ require 'spec_helper'
 
 describe "Videos" do
   describe "GET /videos" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
+    it "returns video path" do
       get videos_path
       response.status.should be(200)
+    end
+
+    it 'renders correct video dashboard' do
+      visit videos_path
+      page.should have_content 'Your Current YouTube Videos'
     end
   end
 end
