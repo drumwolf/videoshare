@@ -1,7 +1,8 @@
 %p#notice= notice
 
-%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/_ovdm2yX4MA", :width => "560"}
-%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "#{@video.url.to_s.delete "https", "videos", ":" }", :width => "560"}
+/%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/_ovdm2yX4MA", :width => "560"}
+/%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "#{@video.url.to_s.delete "https", "videos", ":" }", :width => "560"}
+%iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/#{@video.youtube_id}"}
 
 %p
   %b Url:
