@@ -9,7 +9,8 @@
 
   - @videos.each do |video|
     %tr
-      %td= video.url
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/#{video.youtube_id}"}
+      %td= link_to "#{video.url}", video.url
       %td= link_to 'Show', video
       %td= link_to 'Edit', edit_video_path(video)
       %td= link_to 'Destroy', video, :method => :delete, :data => { :confirm => 'Are you sure?' }
