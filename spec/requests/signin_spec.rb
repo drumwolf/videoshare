@@ -6,7 +6,7 @@ Warden.test_mode!
 
 describe "Signin" do
   describe "/users/sign_in" do
-    it 'renders correct landing page' do
+    xit 'renders correct landing page' do
       page.should have_content 'Share Videos For Your Cause'
     end
   end
