@@ -4,9 +4,7 @@
 %table
   %tr
     %th YouTube Video Url
-    %th
-    %th
-    %th
+
   - @videos.each do |video|
     %tr
       .span4
@@ -15,10 +13,10 @@
         %p
 
         %td= link_to "#{video.url}", video.url
-        %td= link_to 'Show', video  ,  :class => 'btn btn-mini'
-        %td= link_to 'Edit', edit_video_path(video)  , :class => 'btn btn-mini'
-        %td= link_to 'Destroy', video, :class => 'btn btn-mini', :method => :delete, :data => { :confirm => 'Are you sure?', :class => 'btn btn-mini' }
+        %td= link_to 'Show', video  ,  :class => 'btn btn-success'
+        %td= link_to 'Edit', edit_video_path(video)  , :class => 'btn btn-warning'
+        %td= link_to 'Destroy', video, :class => 'btn btn-danger', :method => :delete, :data => { :confirm => 'Are you sure?', :class => 'btn btn-mini' }
 
 %br
 
-= link_to 'New YouTube Video', new_video_path , :class => 'btn btn-mini'
+= link_to 'New YouTube Video', new_video_path , :class => 'btn btn-success'
