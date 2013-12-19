@@ -29,6 +29,9 @@ module Videoshare
       g.helper_specs false
     end
 
+    # Added 'images' to asset pipeline
+    config.assets.paths << "#{Rails.root}/app/assets/images"
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
