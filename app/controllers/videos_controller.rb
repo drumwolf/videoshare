@@ -2,8 +2,7 @@ class VideosController < ApplicationController
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
-
+    @videos = current_user.videos.all
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @videos }
@@ -40,8 +39,7 @@ class VideosController < ApplicationController
   # POST /videos
   # POST /videos.json
   def create
-    @video = Video.new(params[:video])
-
+    @video = current_user.videos.new(params[:video])
     respond_to do |format|
       if @video.save
         format.html { redirect_to @video, notice: 'Video was successfully created.' }

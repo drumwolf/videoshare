@@ -1,22 +1,5 @@
 .text-center
-  %h1 Your Current YouTube Videos
-
-%table
-  %tr
-    %th YouTube Video Url
-
-  - @videos.each do |video|
-    %tr
-      .span4
-        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/#{video.youtube_id}"}
-        = link_to "#{video.url}", video.url
-        %p
-
-        %td= link_to "#{video.url}", video.url
-        %td= link_to 'Show', video  ,  :class => 'btn btn-primary'
-        %td= link_to 'Edit', edit_video_path(video)  , :class => 'btn btn-primary'
-        %td= link_to 'Destroy', video, :class => 'btn btn-danger', :method => :delete, :data => { :confirm => 'Are you sure?', :class => 'btn btn-mini' }
-
-%br
-
+  %h1 
+    = (@videos.size > 0) ? 'Your Current YouTube Videos' : 'No Current Videos'
 = link_to 'New YouTube Video', new_video_path , :class => 'btn btn-success'
+= render 'videos/video', :videos => @videos

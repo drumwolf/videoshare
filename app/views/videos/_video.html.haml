@@ -1,0 +1,8 @@
+#videos{:style=>'clear:both; margin-top:20px;'}
+- videos.each do |video|
+  .video{ :style => 'display:inline-block; float:left; margin-right:10px;' }
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "//www.youtube.com/embed/#{video.youtube_id}"}
+    %p
+      = link_to 'Show', video  ,  :class => 'btn btn-primary'
+      = link_to 'Edit', edit_video_path(video)  , :class => 'btn btn-primary'
+      = link_to 'Destroy', video, :class => 'btn btn-danger', :method => :delete, :data => { :confirm => 'Are you sure?', :class => 'btn btn-mini' }
