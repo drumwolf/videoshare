@@ -6,6 +6,7 @@
       %meta{:content => content_for?(:description) ? yield(:description) : "Videoshare", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Audiowide"
+        = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Raleway:300,700"
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
@@ -22,5 +23,3 @@
               = render 'layouts/messages'
               = yield
           %footer
-      / ! end of .container
-    / ! end of #main
