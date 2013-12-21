@@ -2,7 +2,7 @@
 	nav.collapse {
 		clear: both;
 		height: inherit;
-		min-height: 48px;
+		min-height: 40px;
 	}
 	.navbar.navbar-inverse .navbar-inner {
 		.navbar-collapse {
@@ -12,30 +12,30 @@
 		.nav.navbar-right {
 			float: left !important;
 			width: 100%;
-			li { 
+			& > li { 
 				width: 100%; 
 				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+				& > a {
+					padding: 10px 14px;
+				}
 			}
-		}
-		a.username {
-			display: inline-block;
-			float:left;
 		}
 		ul.usermenu {
-			display: inline-block;
-			position: relative;
-			height: 48px;
-			margin: 0 !important;
-			top: 0 !important;
-			width: 100%;
 			border-radius: 5px;
+			float: left;
+			margin-bottom: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			overflow: hidden;
+			position: relative;
+			top: 0 !important;
+			width: inherit !important;
 			li {
+				display: block;
+				text-align:left;
 				float: left;
-				display: inline-block;
-				width: 100px !important;
-				text-align: left;
-				padding-top: 10px;
+				padding-right: 20px;
 			}
-		}	
+		}
 	}
 }
