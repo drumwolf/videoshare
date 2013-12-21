@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	nav.collapse {
 		clear: both;
 		height: inherit;
@@ -37,5 +37,11 @@
 				padding-right: 20px;
 			}
 		}
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar.navbar-inverse .brand {
+		font-size: 24px;
 	}
 }
