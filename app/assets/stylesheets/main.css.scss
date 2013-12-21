@@ -35,11 +35,12 @@ body {
   border-top-right-radius: 0;
   position:fixed;
   top: 0; left: 0;
-  width: 100%;
+  width: 100%; 
   .navbar-inner {
     background-color: transparent !important;
     background-image: none !important;
     border: 0 !important;
+    position:relative;
     .nav.navbar-right {
       float: right !important;
     }
@@ -47,14 +48,17 @@ body {
   .navbar-toggle {
     margin-right: 0;
   }
+  .navbar-collapse {
+    position:relative;
+  }
   .brand {
     color: #fff;
     font-family: $vs_logo_font, 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
     font-size: 32px;
   }
   .brand, ul.nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     line-height: 20px;
   }
   .menu-icon {
