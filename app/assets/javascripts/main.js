@@ -9,7 +9,7 @@ function user_dropdown() {
 	$('body').click(function(){
 		usermenu.slideUp();
 	});
-	$('a.username').click(function(e){
+	$('a.dropdown-trigger').click(function(e){
 		if ( !usermenu.is(':visible') ) {
 			usermenu.slideDown();
 			e.stopPropagation();

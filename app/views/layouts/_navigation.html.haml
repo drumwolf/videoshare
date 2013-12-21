@@ -8,7 +8,7 @@
   %ul.nav.navbar-right
     - if user_signed_in?
       %li
-        = link_to current_user.name, '#', { class: 'username' }
+        = link_to current_user.name, '#', { class: 'dropdown-trigger' }
         %ul.usermenu
           %li
             = link_to 'Videos', videos_path#, :method=>'index'
@@ -21,7 +21,8 @@
               = link_to 'Admin', users_path
     - else
       %li
-        = link_to 'Login', 'new_user_session_path', { class: 'username' }
+        -# = link_to 'Login', new_user_session_path, { class: 'username' }
+        = link_to 'Login', '#', { class: 'dropdown-trigger' }
         %ul.usermenu
           %li
             asdfas fda
