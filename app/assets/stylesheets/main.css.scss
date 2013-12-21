@@ -52,9 +52,11 @@ body {
     position:relative;
   }
   .brand {
+    background: url('/assets/header-icon.png') 0 9px no-repeat;
     color: #fff;
     font-family: $vs_logo_font, 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans-serif';
     font-size: 32px;
+    padding-left: 45px;
   }
   .brand, ul.nav > li > a {
     padding-top: 15px;
