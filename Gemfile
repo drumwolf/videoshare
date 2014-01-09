@@ -19,7 +19,7 @@ gem 'heroku'
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
   gem 'html2haml'
   gem 'hub', :require=>nil
   gem 'quiet_assets'

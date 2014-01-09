@@ -4,7 +4,7 @@ class VideosController < ApplicationController
   def index
     @videos = current_user.videos.all
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.json { render json: @videos }
     end
   end
@@ -27,6 +27,7 @@ class VideosController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
+      #format.html {redirect_to users_url, notice: 'to users path'}
       format.json { render json: @video }
     end
   end

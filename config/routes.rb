@@ -3,6 +3,7 @@ Videoshare::Application.routes.draw do
 
 
   authenticated :user do
+
     root :to => 'videos#index'
     # root :to => 'home#index'
   end
