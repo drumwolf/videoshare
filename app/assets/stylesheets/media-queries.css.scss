@@ -1,0 +1,76 @@
+@media (min-width: 1200px) {
+	.content {
+		margin: 0;
+	}
+}
+
+@media (min-width:980px) and (max-width:1199px) {
+	.container {
+		padding-left:0;
+		padding-right:0;
+	}
+}
+
+@media (min-width:768px) {
+	.navbar .nav {
+		margin: 0 -5px 0 0 !important;
+	}
+	.content {
+		padding: 20px 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	nav.collapse {
+		clear: both;
+		height: inherit;
+		min-height: 40px;
+		margin-right: 0 !important;
+	}
+	.navbar.navbar-inverse .brand {
+		margin-left: -5px;
+	}
+	.navbar.navbar-inverse .navbar-inner {
+		.navbar-toggle {
+			margin-bottom: 6px;
+		}
+		.navbar-collapse {
+			box-shadow: none !important;
+			border-top: 0 !important;
+		}
+		.nav.navbar-right {
+			float: left !important;
+			width: 100%;
+			& > li { 
+				width: 100%; 
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+				& > a {
+					padding: 10px 14px;
+				}
+			}
+		}
+		ul.usermenu {
+			border-radius: 5px;
+			float: left;
+			margin-bottom: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			overflow: hidden;
+			position: relative;
+			top: 0 !important;
+			width: inherit !important;
+			li {
+				display: block;
+				text-align:left;
+				float: left;
+				padding-right: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar.navbar-inverse .brand {
+		font-size: 24px;
+	}
+}
