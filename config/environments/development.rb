@@ -34,7 +34,7 @@ Videoshare::Application.configure do
       port:                 587,
       domain:               'gmail.com',
       user_name:            'leopark647',
-      password:             'A#magro#',
+      password:             'xxxxxxxxx',
       authentication:       'plain',
       enable_starttls_auto: true  }
 
