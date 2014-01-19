@@ -187,8 +187,13 @@ a.btn {
 /* flash alert */
 
 .alert {
-  width: 100%;
+  padding:10px 10px;
+  position:absolute;
+  z-index:2000;
+  width: 50%;
+  left: 25%;
+  margin-top:-5px;
   .close {
-    right: 5px !important;
+    right:0;
   }
 }
