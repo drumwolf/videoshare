@@ -12,7 +12,7 @@
 
 $vs_blue  : #83dcfe;
 $vs_green : #090;
-$vs_red   : #e41f28;
+$vs_red   : #933;
 $vs_navy  : #2b4596;
 $vs_orange: #f79a41;
 $vs_logo_font  : 'Audiowide';
@@ -21,7 +21,7 @@ $vs_font       : 'Raleway';
 /***** main *****/
 
 body {
-  background-color: $vs_red;
+  background-color: #fff;
   padding-top: 50px;
   font-family: $vs_font, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   font-size: 14px;
@@ -195,5 +195,38 @@ a.btn {
   margin-top:-5px;
   .close {
     right:0;
+  }
+}
+
+/***** main section *****/
+
+@-webkit-keyframes homepage-skyline {
+  100%  { background-position: -800px -30px; }
+}
+@-moz-keyframes homepage-skyline {
+  100%  { background-position: -800px -30px; }
+}
+@-o-keyframes homepage-skyline {
+  100%  { background-position: -800px -30px; }
+}
+@keyframes homepage-skyline {
+  100%  { background-position: -800px -30px; }
+}
+
+#main {
+  background:$vs_red url('/assets/background.png') 0 -30px;
+  color:#fff;
+  font-size:16px;
+  padding:40px 0;
+  text-shadow:0 1px 2px rgba(0, 0, 0, 0.25);
+
+  -webkit-animation: homepage-skyline 30s linear infinite; /* Safari 4+ */
+  -moz-animation:    homepage-skyline 30s linear infinite; /* Fx 5+ */
+  -o-animation:      homepage-skyline 30s linear infinite; /* Opera 12+ */
+  animation:         homepage-skyline 30s linear infinite; /* IE 10+ */
+
+  h2 {
+    font-weight:bold;
+    font-size:40px;
   }
 }
