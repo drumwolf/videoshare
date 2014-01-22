@@ -29,8 +29,17 @@ function navbar_toggle() {
 	})
 }
 
+function modal_open() {
+	$('.modal_link').click(function(e){
+		$('#modal_layer').show();
+		$('#modal').fadeIn();
+		return false;
+	})
+}
+
 $(document).ready(function(){
 	alert_disappear();
 	user_dropdown();
 	navbar_toggle();
+	modal_open();
 });
